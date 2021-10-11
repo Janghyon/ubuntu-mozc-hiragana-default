@@ -1,3 +1,7 @@
+# setup-environment
+Ubuntu 20.04.3 LTS
+VirtualBox 6.1.26
+
 # ubuntu-mozc-hiragana-default
 ubuntuを起動時にmozcのデフォルトをhiraganaにする
 
