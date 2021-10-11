@@ -16,7 +16,7 @@ sudo apt build-dep ibus-mozc -y
 sudo apt install debhelper -y
 apt source ibus-mozc
 ```
-ソースパッケージをインストール後
+ソースパッケージをインストール後訂正を行う
 ```
 vim $(find . -name property_handler.cc)
 ```
@@ -44,3 +44,7 @@ dpkg-buildpackage -us -uc -b
 ```
 sudo dpkg -i ../mozc*.deb ../ibus-mozc*.deb
 ```
+
+### References
+https://dakusui.hatenablog.com/entry/2017/09/24/160400
+https://forum.zorin.com/t/ibus-mozc-how-to-change-default-input-mode-of-ibus-mozc-to-hiragana/5071
