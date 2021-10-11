@@ -1,5 +1,5 @@
 # setup-environment
-Ubuntu 20.04.3 LTS
+Ubuntu 20.04.3 LTS  
 VirtualBox 6.1.26
 
 # ubuntu-mozc-hiragana-default
