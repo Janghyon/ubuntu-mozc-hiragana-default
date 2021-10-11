@@ -5,6 +5,9 @@ VirtualBox 6.1.26
 # ubuntu-mozc-hiragana-default
 ubuntuを起動時にmozcのデフォルトをhiraganaにする
 
+# setup
+ターミナルにて
+
 ```
 sudo apt update
 sudo apt upgrade -y
