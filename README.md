@@ -19,7 +19,7 @@ vim $(find . -name property_handler.cc)
 ```
 ```
 #if IBUS_CHECK_VERSION(1, 5, 0)
-const bool kActivatedOnLaunch = false;
+const bool kActivatedOnLaunch = ~~false~~;
 #else
 const bool kActivatedOnLaunch = true;
 #endif  // IBus>=1.5.0
