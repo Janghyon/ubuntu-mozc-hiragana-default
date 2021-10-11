@@ -46,5 +46,5 @@ sudo dpkg -i ../mozc*.deb ../ibus-mozc*.deb
 ```
 
 ### References
-https://dakusui.hatenablog.com/entry/2017/09/24/160400
+https://dakusui.hatenablog.com/entry/2017/09/24/160400  
 https://forum.zorin.com/t/ibus-mozc-how-to-change-default-input-mode-of-ibus-mozc-to-hiragana/5071
