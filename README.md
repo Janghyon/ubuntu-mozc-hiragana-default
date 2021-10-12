@@ -14,7 +14,7 @@ sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt build-dep ibus-mozc -y
 ```
-この時に以下のエラーが出てきたら、
+この時に以下のエラーが出てきた場合（出て来なかった場合は、続きの2番目をそのまま行う）
 ```
 E: You must pu some 'deb-src' URIs in your sources.list
 ```
@@ -25,6 +25,7 @@ software-properties-gtk
 ![Screenshot from 2021-10-12 15-40-56](https://user-images.githubusercontent.com/85086276/136905160-c11fca73-712f-4b4d-a849-38442cba5b63.png)
 続き、
 ```
+sudo apt build-dep ibus-mozc -y
 sudo apt install debhelper -y
 apt source ibus-mozc
 ```
