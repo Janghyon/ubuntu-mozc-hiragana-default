@@ -13,9 +13,22 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install build-essential devscripts -y
 sudo apt build-dep ibus-mozc -y
+```
+この時に以下のエラーが出てきたら、
+```
+E: You must pu some 'deb-src' URIs in your sources.list
+```
+```
+software-properties-gtk
+```
+上記をterminalにて入力し、Source codeの箇所を下記の様な状態にします。
+![Screenshot from 2021-10-12 15-40-56](https://user-images.githubusercontent.com/85086276/136905160-c11fca73-712f-4b4d-a849-38442cba5b63.png)
+続き、
+```
 sudo apt install debhelper -y
 apt source ibus-mozc
 ```
+
 ソースパッケージをインストール後訂正を行う
 ```
 vim $(find . -name property_handler.cc)
@@ -40,7 +53,7 @@ const bool kActivatedOnLaunch = true;
 cd mozc-2.23.2815.102+dfsg
 dpkg-buildpackage -us -uc -b
 ```
-その後インストールをする
+その後訂正を適用してインストールをする
 ```
 sudo dpkg -i ../mozc*.deb ../ibus-mozc*.deb
 ```
