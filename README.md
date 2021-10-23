@@ -5,12 +5,12 @@ VirtualBox 6.1.26
 # ubuntu-mozc-hiragana-default
 ubuntu mozc inputmodeのデフォルトをhiraganaにする
 
-#PREINSTALL IBUS-MOZC
-´´´
+# PREINSTALL IBUS-MOZC
+```
 $ sudo apt install ibus-mozc 
 $ ibus restart 
 $ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('ibus', 'mozc-jp')]"
-´´´
+```
 
 # setup
 ターミナルにて
